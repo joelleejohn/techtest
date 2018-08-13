@@ -1,0 +1,190 @@
+/*                  Fonts                   */
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans|Merriweather|Merriweather+Sans|Nunito|Nunito+Sans|Quattrocento|Quattrocento+Sans|Roboto|Roboto+Mono|Roboto+Slab');
+@keyframes background-to-yellow {
+    from {background-color: lightgrey; }
+    to {background-color: rgba(255, 240, 108, 0.945)}
+}
+@keyframes background-to-brown {
+    from {background-color: lightgrey; }
+    to {background-color: rgba(255, 162, 108, 0.945)}
+}
+@keyframes background-to-choc {
+    from {background-color: lightgrey; }
+    to {background-color: rgba(255, 192, 167, 0.925)}
+}
+@keyframes menu-select {
+    to {background-color: rgba(197, 197, 197, 0.945); border-right: 10px solid grey;}
+}
+@keyframes menu-deselect {
+    to {background-color: rgba(209, 76, 76, 0.945);}
+}
+div {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+.grid-container > div {
+
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.grid-container {
+    display: grid;  
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8,1fr);
+    gap: 0;
+    background-color:  rgba(255, 255, 255, 0.8); 
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    clear: both;
+    margin: -1% 0 30px 0;
+    animation-duration: 1s;
+}
+/*                  left side of the page                     */
+.left { 
+    grid-column: 1/span 1;
+    grid-row: span 8;
+    border-right: 5px solid grey;
+    background-color: lightgrey ; 
+    position: relative;
+    margin: 0;
+}
+.leftpad { 
+    grid-column: 2/ span 1;
+    grid-row: span 8;
+    border: none;
+    background-color: transparent; 
+ }
+ /*                  header with logo                    */
+.header { 
+    grid-column: 3/span 6; 
+    grid-row: span 1;
+    border-bottom: 5px solid gray ;
+    border-left: 5px solid rgb(145, 145, 145);
+    border-right: 5px solid rgb(109, 109, 109); 
+    background-color:  rgba(216, 53, 53, 0.945); 
+    background-image: url("images/red-river.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    
+}
+/*                  right side of the page                     */
+.rightpad {
+    grid-column:9; 
+    grid-row: span 8;
+    border: none ;
+    background-color: transparent ;
+}
+.right { 
+    grid-column: 10; 
+    grid-row: span 8;
+    border-left: 5px solid grey;
+    background-color: lightgrey;
+
+}
+/*                  main content box                     */
+.content { 
+    grid-column: 3/ span 6; 
+    grid-row: 2 / span 5 ;
+    background-color: transparent;
+    padding: 0;
+}
+/*                  this and total order                     */
+.thisord { 
+    grid-column: 3 / span 5;
+    grid-row: 7; 
+    background-color:  rgba(209, 76, 76, 0.945);
+    color: white;
+}
+.thisord input {
+    height: 3ch; 
+    position: relative;
+    left: 10px;
+}
+.totord { 
+    grid-column: 3 / span 5; 
+    grid-row: 8; 
+    background-color:rgba(209, 76, 76, 0.945);
+    color: white;
+}
+
+/*                  shopping basket                     */
+.basket {
+    grid-column: 8; 
+    grid-row: 7 / span 2;
+    padding: 0;
+    background-color: rgba(209, 76, 76, 0.945); 
+
+}
+/*                  navigation menu                     */
+.tabs {
+    top: 35%;
+    position: relative;
+    margin: -1% -1% 0 0;
+    font-family: 'Alegreya', serif;
+}
+.tabs > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+} 
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-top: 5px solid rgba(128, 128, 128, 1);
+    border-bottom: 5px solid rgba(128, 128, 128, 1);
+    margin-bottom: 20px;
+    width: 100%;
+    color: ghostwhite; 
+    background-color: rgba(209, 76, 76, 0.945);
+    animation-duration: 0.6s;
+}
+
+/*                  Shopping cart                   */
+
+
+.basket-image{
+    position: relative;
+    top: 40%;
+}
+
+/*                  Forms                   */ 
+#lemon-order {
+    height: 100%;
+
+}
+#total-order {
+    height: 100%;
+
+}
+legend {
+    border: 1px solid lightgray;
+    margin: 1ch;
+}
+.subbtn {
+    border: 3px solid rgba(255, 255, 255, 0.897);
+    background-color: black;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    transition-duration: 0.6s;
+    font-size: 1ch;
+    border-radius: 5px;
+}
+.subbtn:hover{
+    border-radius: 0;
+    background-color: rgba(209, 76, 76, 0.945);
+    border: 0px;
+    color:white;
+}
+fieldset{
+    border: none;
+}
+

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Red River Drinks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+  <body>  
+<!--          Grid layout         -->              
+    <div class="grid-container">
+      <div class="left">
+
+<!--          Tabs for the navigation bar         -->
+       <div class="tabs">
+          <ul> 
+            <li><a id="lemon-tea">Lemon Tea</a></li>
+            <li><a id="coffee">Coffee</a></li>
+            <li><a id="chocolate">Hot Chocolate</a></li>
+            <li><a id="reset-ord">Reset Order</a></li>
+          </ul>
+        </div>
+      </div>
+
+<!--          Left side padding         -->     
+      <div class="leftpad"></div>
+      <div class="header"></div>  
+
+<!--          Right side padding          --> 
+      <div class="rightpad"></div>
+      <div class="right"></div>
+
+<!--          Main content box          -->       
+      <div class="content">
+        <div class="lemon-tea-text">
+            <h2>Lemon Tea Recipe</h2>
+            <ol>
+              <li>Boil some water</li>
+              <li>Steep the water in the tea</li>
+              <li>Pour the tea in the cup</li>
+              <li>Add Lemon</li>
+            </ol>
+            <p>The cost of Lemon Tea is: £2.50 </p>
+        </div>
+        <div class="coffee-text" >
+            <h2>Coffee Recipe</h2>
+            <ol>
+              <li>Boil some water</li>
+              <li>Brew the coffee grounds</li>
+              <li>Pour the coffee in the cup</li>
+              <li>Add sugar and milk</li>
+            </ol>
+            <p>The cost of Coffee is: £2.00 </p>
+        </div>
+        <div class="chocolate-text">
+          <h2>Hot Chocolate Recipe</h2>
+          <ol>
+            <li>Boil some water</li>
+            <li>Add drinking chocolate powder to the water</li>
+            <li>Pour chocolate in the cup</li>
+          </ol>
+          <p>The cost of Hot Chocolate is: £1.50 </p>
+        </div>
+      </div>
+
+<!--          This Order        -->
+      <div class="thisord">
+         <!-- <fieldset id="lemon-order">
+            <label> Lemon Order:  <input type="text" value="5" name="Lemon" id="lem"></label>
+          </fieldset> -->
+          <fieldset id="lemon-order">
+            <label>Number of Lemon Tea(s): </label>
+            <input type="text" id="lem" name="name" value="" />
+            <input type="button" id="lem-value" value="Add" class="subbtn"/>
+        </fieldset>
+          <fieldset id="coffee-order">
+            <label>Number of Coffee(s): </label>
+            <input type="text" id="cof" name="name" value="" />
+            <input type="button" id="cof-value" value="Add" class="subbtn"/>
+          </fieldset>
+          <fieldset id="chocolate-order">
+            <label>Number of Hot Chocolate(s): </label>
+            <input type="text" id="choc" name="name" value="" />
+            <input type="button" id="choc-value" value="Add" class="subbtn"/>            
+          </fieldset>
+
+        </form>
+      </div>
+<!--          Total Order           -->
+      <div class="totord">
+       <!-- <form action="#"> -->
+          <fieldset id="total-order">
+            <legend>Total Order</legend>
+            <p>Total cost of order:<em id="change-cost"></em>  </p>
+        </fieldset>
+    <!--  </form>  --> 
+      </div>
+
+<!--          Basket          -->
+      <div class="basket">
+        <div class="basket-image">
+        <img src="images/shopping-cart.png" alt="basket"/>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
+

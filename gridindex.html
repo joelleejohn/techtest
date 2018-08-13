@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>grid</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+        <script src="main.js"></script>
+<style>
+    .left { grid-area: left;}
+    .leftpad { grid-area: lp; }
+    .header { grid-area: title; }
+    .rightpad {grid-area: rp; }
+    .right { grid-area: right;}
+    .content { grid-area: content; min-height:500px;}
+    .numord { grid-area: noo;}
+    .thisord { grid-area: thisord; }
+    .totord { grid-area: totord; }
+    .basket {grid-area:basket;}
+    .grid-container {
+  display: grid;
+  grid-template-areas:
+    'left  lp  title  title  title  title  title  title  rp  right'
+    'left  lp  content  content  content  content  content  content  rp  right'
+    'left  lp  content  content  content  content  content  content  rp  right'
+    'left  lp  content  content  content  content  content  content  rp  right'
+    'left  lp  content  content  content  content  content  content  rp  right'
+    'left  lp  content  content  content  content content  content  rp  right'
+    'left  lp  thisord  thisord  thisord  thisord  thisord  basket  rp  right'
+    'left  lp  totord  totord  totord  totord  totord  basket  rp  right';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+                <body>                
+                <div class="grid-container">
+                  <div class="left">left</div>
+                  <div class="leftpad">leftpad</div>
+                  <div class="header">header</div>  
+                  <div class="rightpad">rightpad</div>
+                  <div class="right">right</div>
+                  <div class="content">content</div>
+                  <div class="thisord">thisord</div>
+                  <div class="totord">totord</div>
+                  <div class="basket"></div>
+              </div>
+
+</body>
+</html>
+
+/*'left leftp title title title title title title rightp right'
+          'left leftp content content content content content content rightp right'
+          'left leftp content content content content content content rightp right'
+          'left leftp content content content content content content rightp right'
+          'left leftp content content content noo noo content rightp right'
+          'left leftp content content content noo noo content rightp right'
+          'left leftp thisord thisord thisord thisord thisord basket rightp right'
+          'left leftp totord totord totord totord totord basket rightp right';*/
